@@ -16,7 +16,7 @@ function useCounter() {
   const context = useContext(CounterContext);
 
   if (!context) {
-    throw new Error("useTask need a TaskProvider");
+    throw new Error("useCounter need a CounterProvider");
   }
   return context;
 }
